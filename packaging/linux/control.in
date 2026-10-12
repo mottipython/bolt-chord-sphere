@@ -1,0 +1,16 @@
+Package: bolt-chord-sphere
+Version: @VERSION@
+Section: games
+Priority: optional
+Architecture: @ARCH@
+Depends: libc6 (>= 2.38), libsdl2-2.0-0 (>= 2.0.18), swayidle
+Installed-Size: @SIZE@
+Maintainer: Motti Schleider <motti.schleider@gmail.com>
+Description: Bolt, chord and sphere, a screensaver from "Anathem"
+ The three things an avout owns, from Neal Stephenson's novel Anathem. A fraa in
+ the cloister shows what they are good for: the sphere as pillow, seat, lamp,
+ bowl, shield and pill, the bolt thin for the heat and thick for the cold, and
+ the chord hauling a stone into the air.
+ .
+ On Wayland desktops it starts by itself after five minutes idle.
+ bolt-chord-sphere-screensaver changes the delay or turns it off.

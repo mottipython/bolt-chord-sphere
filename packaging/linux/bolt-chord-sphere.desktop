@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Bolt, Chord and Sphere
+Comment=What a fraa can do with the three things he owns
+Exec=bolt-chord-sphere --window
+Icon=bolt-chord-sphere
+Categories=Game;LogicGame;Education;Math;
+Keywords=Anathem;avout;fraa;screensaver;

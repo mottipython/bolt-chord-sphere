@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Bolt, Chord and Sphere screensaver
+Comment=Start Bolt, Chord and Sphere when the session has been idle
+Exec=bolt-chord-sphere-screensaver watch
+Icon=bolt-chord-sphere
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
