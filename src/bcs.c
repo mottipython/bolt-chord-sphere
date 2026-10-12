@@ -354,7 +354,7 @@ static void scene_pillow(double t)
 
 static void scene_seat(double t)
 {
-    double grow = spring(t, 1.5, 4.5), d = 0.07 + 0.15 * grow, bx = 0.56;
+    double grow = spring(t, 1.5, 4.5), d = 0.07 + 0.2 * grow, bx = 0.57;
     if (t < 6) {
         shadow(bx, d, 1);
         ball(SP_SPHERE, bx, GROUND - d / 2, d, 1 + 0.06 * sin(t * 9) * (grow < 1 && t > 1.5), anim_t * 0);
@@ -362,9 +362,12 @@ static void scene_seat(double t)
         say1 = "A TWIST OF THE OPEN HAND"; say2 = "AND THE SPHERE GROWS";
     } else {
         double settle = 1 - 0.12 * exp(-(t - 6) * 4) * cos((t - 6) * 12); /* it gives a little as he sits */
-        shadow(0.5, 0.22, 1);
-        ball(SP_SPHERE, 0.5, GROUND - 0.22 * settle / 2, 0.22, settle, 0);
-        stand(SP_SIT, 0.5, 1, 0.22 * settle * 0.62, 0);
+        double d = 0.27, top = d * settle;
+        shadow(0.49, d, 1);
+        ball(SP_SPHERE, 0.49, GROUND - top / 2, d, settle, 0);
+        /* his seat is about two-thirds of the way down the drawing of him, so that is
+         * what goes on top of the sphere, a little sunk in, with his legs hanging in front */
+        stand(SP_SIT, 0.5, 1, top - tall_of(SP_SIT) * 0.4, 0);
         say1 = "THE SPHERE: A SEAT"; say2 = "FIRM ENOUGH TO SIT ON, AND ANY HEIGHT YOU LIKE";
     }
 }
