@@ -1,7 +1,7 @@
 # Bolt, Chord and Sphere
 
 A screensaver of the three things an avout owns, from Neal Stephenson's novel
-*Anathem*. Runs on Linux, Windows and macOS.
+*Anathem*. Runs on Linux, Windows and macOS. One of the [Anathem screensavers](https://github.com/mottipython/anathem-screensavers).
 
 ![The sphere as a seat](docs/screenshots/03-a-seat.jpg)
 
